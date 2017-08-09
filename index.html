@@ -7,49 +7,475 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
+p {
+    font-size: 100%;
+}
+
+h2,h3,h4{
+  font-size: 400%;
+}
+#information{
+    font-family:lato ;
+
+}
+#Tips{
+
+  font-family: lato;
+}
+#Stories{
+
+  font-family: lato ;
+}
+
+#AnimalShelterNearYou{
+
+  font-family: lato ;
+}
+#OurTeam{
+  font-family: lato;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 </style>
 <body>
-<!-- Navbar -->
-<div class="top">
-  <div class="w3-bar w3-white w3-card-2">
-   <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
-   onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-     <a href="# Home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-     <a href="# Information" class="w3-bar-item w3-button w3-padding-large">Information</a>
-     <a href="#Tips" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Tips</a>
-    <a href="#Shelters near you" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Shelter near you</a>
-    <a href="#Stories" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stories</a>
-    <a href="#Our Team" class="w3-bar-item w3-button w3-padding-large w3 hide-small">Our Team</a>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div id="section1" class="container-fluid">
+    <ul class="navbar-nav">
+    <li><a href="#Home" class="navbar-brand">HOME</a></li>
+    <li><a href="#Information" class="w3-navbar w3-button w3-padding-large">Information</a></li>
+    <li><a href="#Tips" class="w3-navbar w3-button w3-padding-large w3-hide-small">Tips</a></li>
+    <li><a href="#Shelters" class="w3-navbar w3-button w3-padding-large w3-hide-small">Shelters near you</a></li>
+    <li><a href="#Stories" class="w3-navbar w3-button w3-padding-large w3-hide-small">Stories</a></li>
+    <li><a href="#OurTeam" class="w3-navbar w3-button w3-padding-large w3 hide-small">Our Team</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
 <!-- Header -->
 <header class="w3-container w3-black w3-center" style="padding:128px 16px">
 <img src="paw2.jpg" alt="paw print" style="width:128px;height:128px;">
   <h1 class="w3-margin w3-jumbo">FurEnds</h1>
 </header>
-<div class="w3-row-padding w3-padding-64 w3-container">
+<div class="w3-row-padding w3-padding-64 w3-container"id="">
   <div class="w3-content">
     <div class="w3-twothird">
     </div>
  </div>
  <!-- INFORMATION -->
  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Information">
-     <h2 class="w3-wide">Information</h2>
-      <p> “In 1997, Chicago 28,314 dogs and cats come into the Chicago Animal Control and Care (CACC), and 26,394 were killed.”
-<br>--PAWS Chicago</p>
-
-      <p>  “Of the 1,423 U.S. cruelty cases on animal abuse, 70.1% involved dogs, 20.9% involved cats, 24.1% involved other animals.”
+   <img src="paw2.jpg" alt="paw" style="width:100px;height:80px;">
+     <h2 class="w3-wide" id="Information"><font color="blue">Information</h2></font>
+      <p class="w3-padding-32"> “In 1997, Chicago had 28,314 dogs and cats come into the Chicago Animal Control and Care (CACC), and 26,394 were killed.”
+        <br>--PAWS Chicago</p>
+        <br>
+      <p class="w3-padding-32">“Of the 1,423 U.S. cruelty cases on animal abuse, 70.1% involved dogs, 20.9% involved cats, 24.1% involved other animals.”
 					<br>--The Humane Society of the United States</p>
-      <p> “On January 1, 2016, the FBI added cruelty to animals as a category in the Uniform Crime Report.”
-<br>--The Humane Society of the United States</p>
-      <p>“There is no federal cruelty law when it comes to animals. Instead, cases are handled on a state by state basis.”
-      <br>--Canine Journal</p>
-      <p>“Anti-cruelty laws exist in all U.S. states and territories to prohibit unnecessary killing, mutilating, torturing, beating, neglecting and abandoning animals, or depriving them of proper food, water or shelter.”
+          <br>
+      <p class="w3-padding-32">“There is no federal cruelty law when it comes to animals. Instead, cases are handled on a state by state basis.”
+      <br>--Canine Journal</p><br>
+      <p class="w3-padding-32">“Anti-cruelty laws exist in all U.S. states and territories to prohibit unnecessary
+        killing, mutilating, torturing, beating, neglecting and abandoning animals, or depriving them of proper food, water or shelter.”
 <br>--The Human Society of the United States</p>
 
-    <!-- Tips -->
+
+        <table>
+          <tr>
+            <th>Cases</th>
+            <th>Statistics</th>
+
+          </tr>
+          <tr>
+            <td>Average number of animal abuse / cruelty cases reported in the media each year</td>
+            <td>1920</td>
+
+          </tr>
+          <tr>
+            <td>Percent of animal abuse cases that involved dogs</td>
+            <td>60%</td>
+
+          </tr>
+          <tr>
+            <td>Percent of animal abuse cases that involved cats</td>
+            <td>18%</td>
+
+          </tr>
+          <tr>
+            <td>Percent of animal abuse cases that involved other animals</td>
+            <td>22%</td>
+
+          </tr>
+          <tr>
+            <td>Percent of dog abuse cases that involved pit bulls</td>
+            <td>26%</td>
+
+          </tr>
+         <tr>
+         <th>Common Types of Abuse</th>
+         <th>Percent</th>
+         </tr>
+
+         <tr>
+         <td>Neglect / Abandonment</td>
+         <td>32%</td>
+         </tr>
+
+          <tr>
+          <td>Shooting</td>
+          <td>11%</td>
+          </tr>
+
+        <tr>
+          <td>Hoarding</td>
+          <td>13%</td>
+          </tr>
+
+        <tr>
+          <td>Beating</td>
+          <td>8%</td>
+          </tr>
+
+          <tr>
+          <td>Fighting</td>
+          <td>9%</td>
+          </tr>
+
+        <tr>
+          <td>Stabbing</td>
+          <td>5%</td>
+          </tr>
+
+          <tr>
+          <td>Mutilation / Torture</td>
+          <td>5%</td>
+          </tr>
+
+        <tr>
+          <td>Choking / Strangulation / Suffocation</td>
+          <td>3%</td>
+          </tr>
+
+          <tr>
+          <td>Burning</td>
+          <td>2%</td>
+          </tr>
+
+        <tr>
+          <td>Poisoning</td>
+          <td>10%</td>
+          </tr>
+
+        <tr>
+          <td>Other</td>
+          <td>2%</td>
+        </tr>
+        </table>
+<br><br>
+<p><a href="http://www.statisticbrain.com/animal-abuse-statistics/">Statistic Link</p></a>
+
+
+
+
+
+
+
+
+
+<!-- Tips -->
+    <div id="Tips" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twofifths">
+      <img src="paw2.jpg" alt="paw" style="width:100px;height:80px;">
+      <h3 class="w3-wide" id="Tips"><font color="blue">Tips</h3></font>
+<p><b>Evaluate the Situation: </p></b>
+<p class="w3-padding-32">Are there any signs of animal neglect?<br>
+Do they have a safe shelter?<br>
+Are they regularly groomed?<br>
+Are they fed properly?<br>
+Are they treated well?<br.</p>
+<p><b>Report Animal Abuse:</p></b>
+<p class="w3-padding-32">Report it to your local animal control, law enforcement or humane organization.</p>
+<p><b>Understand the Law:</p></b>
+<p class="w3-padding-32">Research anti-cruelty laws in your state and city.<br>
+Inform people of the anti-cruelty laws.</p>
+<p><b>Help Prevent Animal Abuse: </p></b>
+<p class="w3-padding-32">Support initiatives that strengthen anti-cruelty laws<br>
+Contribute or volunteer at local shelters<br>
+Report any animal abuse you see.<br></p>
+
+<!--Shelters -->
+<div id="Shelters">
+<img src="paw2.jpg" alt="paw" style="width:100px;height:80px;">
+<h4 class="w3-wide" id="AnimalShelterNearYou"><font color="blue">Animal Shelters Near You!</h4></font>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for zipcode" title="Type in your zipcode">
+<table id="myTable">
+<tr class="header">
+  <th style="width:20%;">Zip Code</th>
+  <th style="width:40%;">Name of Place</th>
+  <th style ="width:40%">Address</th>
+
+</tr>
+<tr>
+  <td>60015</td>
+  <td>Orphans of the Storm Animal Shelter</td>
+  <td><a href = "https://www.google.com/maps/place/Orphans+of+the+Storm+Animal+Shelter/@42.0085425,-87.6616883,9z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fbf0f76a40a7f:0x1092c5adc0c50acb!8m2!3d42.169571!4d-87.883569">2200 Riverwoods Rd, Deerfield, IL</a></td>
+</tr>
+<tr>
+  <td>60053</td>
+  <td>Wright-Way Rescue</td>
+  <td><a href ="https://www.google.com/maps/place/Wright-Way+Rescue/@42.0085425,-87.6616883,9z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fc91b4cf1b455:0xa8e890e7a4484b77!8m2!3d42.0351439!4d-87.7749815">5915 Lincoln Ave, Morton Grove, IL</a></td>
+</tr>
+<tr>
+  <td>60062</td>
+  <td>Heartland Animal Shelter</td>
+  <td><a href ="https://www.google.com/maps/place/Heartland+Animal+Shelter/@42.0085425,-87.6616883,9z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x0:0x2f85fa430911c55a!8m2!3d42.0994961!4d-87.8822136">2975 Milwaukee Ave, Northbrook, IL</a> </td>
+</tr>
+<tr>
+  <td>60068</td>
+  <td>Lake Shore Animal Shelter</td>
+  <td><a href ="https://www.google.com/maps/place/Lake+Shore+Animal+Shelter/@41.8498028,-87.6899704,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd324bfa2921d:0x336144ff8ac890cd!8m2!3d41.8841124!4d-87.6468242">Park Ridge IL</a></td>
+</tr>
+<tr>
+  <td>60195</td>
+  <td>Chicago Animal Advocates</td>
+  <td><a href = "https://www.google.com/maps/place/Chicago+Animal+Advocates/@42.009488,-87.6967038,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd1a9671b0655:0xb5e1831cb3c0bdf0!8m2!3d42.009488!4d-87.6616849">Hoffman Estates, IL</a></td>
+</tr>
+<tr>
+  <td>60202</td>
+  <td>Evanston Animal Shelter</td>
+  <td><a href = "https://www.google.com/maps/place/Evanston+Animal+Shelter/@42.0261678,-87.8464561,11z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fcfdaa3111ca7:0x4fb0ee51be30b229!8m2!3d42.0261678!4d-87.7063804">2310 Oakton St, Evanston, IL</a></td>
+</tr>
+<tr>
+  <td>60411</td>
+  <td>South Suburban Humane Society</td>
+  <td><a href ="https://www.google.com/maps/place/South+Suburban+Humane+Society/@42.0085425,-87.6616883,9z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880e19442ce43d23:0xc8144b9ee484e614!8m2!3d41.5114017!4d-87.6307969">1103 West End Ave, Chicago Heights, IL</a></td>
+</tr>
+<tr>
+  <td>60563</td>
+  <td>ADOPT Pet Shelter</td>
+  <td><a href= "https://www.google.com/maps/place/A.D.O.P.T.+Pet+Shelter/@42.0085425,-87.6616883,9z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880ef9afbc0e3f6f:0x58a0c169741a6a03!8m2!3d41.778291!4d-88.215414">420 Industrial Dr, Naperville, IL</a></td>
+</tr>
+<tr>
+  <td>60608</td>
+  <td>Chicage Animal Care and Control</td>
+  <td><a href= "https://www.google.com/maps/place/Chicago+Animal+Care+and+Control/@41.8420744,-87.6852675,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880e2d93ac9d8959:0x7c9ff8612d3cd274!8m2!3d41.8420536!4d-87.68376">2741 S Western Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60611</td>
+  <td>LOVIN' LIFE RESCUE</td>
+  <td><a href= "https://www.google.com/maps/place/LOVIN'+LIFE+RESCUE/@41.9037909,-87.6603667,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd350ed9c357b:0x20bef3dc52f49346!8m2!3d41.9037909!4d-87.6253478">1150 N Lake Shore Dr, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60614</td>
+  <td>Paws Chicago</td>
+  <td><a href= "https://www.google.com/maps/place/PAWS+Chicago/@41.9178185,-87.6937634,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd2e0310f2835:0xd0f75d030a39f577!8m2!3d41.9178185!4d-87.6587445">1997 N Clybourn Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60614</td>
+  <td>One Tail at a Time Adoption Center</td>
+  <td><a href= "https://www.google.com/maps/place/One+Tail+at+a+Time+Adoption+Center/@41.920971,-87.7081979,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd2ec00a68a5b:0x8575ff08ce4c7730!8m2!3d41.920971!4d-87.673179">2144 N Wood St, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60616</td>
+  <td>Gina's Helping Hand</td>
+  <td><a href= "https://www.google.com/maps/place/Gina's+Helping+Hand/@41.8498028,-87.6899704,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880e2c752e54b9f9:0x8fab963049ccdef6!8m2!3d41.8360284!4d-87.6203255">3225 S Prairie Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60618</td>
+  <td>Harmony for Cats</td>
+  <td><a href= "https://www.google.com/maps/place/Harmony+House+For+Cats/@41.9342275,-87.7261597,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fcd91e5b0291d:0x1838730749a99c19!8m2!3d41.9342275!4d-87.6911408">2914 N Elston Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60618</td>
+  <td>ALIVE Rescue</td>
+  <td><a href= "https://www.google.com/maps/place/ALIVE+Rescue/@41.9393682,-87.7193296,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd263b964e6bb:0xc924a09e60051fac!8m2!3d41.9393682!4d-87.6843107">2227 W Belmont Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60618</td>
+  <td>Famous Fido Rescue No Kill Advocacy Wellness & Learning Center</td>
+  <td><a href= "https://www.google.com/maps/place/Famous+Fido+Rescue+No+Kill+Advocacy+Wellness+%26+Learning+Center/@41.954245,-87.7415889,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd18f51b22981:0xa03f68d5a798bdd!8m2!3d41.954245!4d-87.70657">3124 W Irving Park Rd, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60623</td>
+  <td>PAWS </td>
+  <td><a href= "https://www.google.com/maps/place/PAWS/@42.0085425,-87.6616883,9z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880e32692661dbc5:0x14d937c7608daabb!8m2!3d41.8446405!4d-87.7130863">3516 W 26th St, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60630</td>
+  <td>Chicago Canine Rescue</td>
+  <td><a href= "https://www.google.com/maps/place/Chicago+Canine+Rescue/@41.9766364,-87.7892666,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fcc207d15c741:0x90214bd694ec4663!8m2!3d41.9766364!4d-87.7542477">5272 N Elston Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60637</td>
+  <td>Animal Welfare League</td>
+  <td><a href= "https://www.google.com/maps/place/Animal+Welfare+League/@41.7810357,-87.6592565,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880e2ed154621259:0xba104e9a4a7cd90b!8m2!3d41.7810357!4d-87.6242376">6224 S Wabash Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60640</td>
+  <td>Pet Taxi Service.com</td>
+  <td><a href= "https://www.google.com/maps/place/Pet+Taxi+Service.com/@41.9724414,-87.7113243,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd221ba07f483:0xf899d7614452b331!8m2!3d41.9724414!4d-87.6763054">N Wolcott Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60640</td>
+  <td>Roscoe Recess</td>
+  <td><a href= "https://www.google.com/maps/place/Roscoe+Recess/@41.8495527,-87.7950354,11z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd23aab19ade9:0xd5b74dde140dd1b9!8m2!3d41.9654841!4d-87.6682654">1506 W Wilson Ave #1, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60642</td>
+  <td>Project Rescue Chicago LLC</td>
+  <td><a href= "https://www.google.com/maps/place/Project+Rescue+Chicago,+LLC/@41.8495527,-87.7950354,11z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd324bfa02377:0x83d52715838e1309!8m2!3d41.9093842!4d-87.6490953">1535 N Dayton St, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60645</td>
+  <td>Red Door Animal Shelter</td>
+  <td><a href= "https://www.google.com/maps/place/Red+Door+Animal+Shelter/@42.0088044,-87.7256465,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd1d10f62f921:0x7d2d019cfb2908!8m2!3d42.0088044!4d-87.6906276">2410 W Lunt Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60645</td>
+  <td>Tree House Humane Society</td>
+  <td><a href= "https://www.google.com/maps/place/Tree+House+Humane+Society/@42.0130944,-87.7249619,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd22a8732b60d:0x3e9d8a0fedb4ec90!8m2!3d42.0130944!4d-87.689943">7225 N Western Ave, Chicago</a></td>
+</tr>
+<tr>
+  <td>60645</td>
+  <td>Hi Kitty Kitty</td>
+  <td><a href= "https://www.google.com/maps/place/Hi+Kitty+Kitty/@42.017697,-87.7169389,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd03489e81da3:0x61cbb5d729e8ddb7!8m2!3d42.017697!4d-87.68192">2037 W Birchwood Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60654</td>
+  <td>The Anti-Cruelity Society</td>
+  <td><a href= "https://www.google.com/maps/place/The+Anti-Cruelty+Society/@41.891365,-87.6683902,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880e2cb3f50b55c7:0xbac7d75f1281490e!8m2!3d41.891365!4d-87.6333713">169 W Grand Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60657</td>
+  <td>Always There Pet Care</td>
+  <td><a href= "https://www.google.com/maps/place/Always+There+Pet+Care/@41.9431935,-87.7018589,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd2508aa166e5:0xb70426b41542cca7!8m2!3d41.9431935!4d-87.66684">1511 West Roscoe, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60657</td>
+  <td>St. Francis Animals Center</td>
+  <td><a href= "https://www.google.com/maps/place/St.+Francis+Animal+Care/@41.939664,-87.6867119,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd3a939ec6613:0xcd2ca492b6343e13!8m2!3d41.939664!4d-87.651693">901 W Belmont Ave, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60660</td>
+  <td>Felines and Canines</td>
+  <td><a href= "https://www.google.com/maps/place/Felines+%26+Canines/@41.997935,-87.7066598,13z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880fd1bc36aa07e1:0xfc472413a0b20a8c!8m2!3d41.997935!4d-87.6716409">6379 N Paulina St, Chicago, IL</a></td>
+</tr>
+<tr>
+  <td>60804</td>
+  <td>Cicero Waggin' Tails Animal Shelter</td>
+  <td><a href= "https://www.google.com/maps/place/Cicero+Waggin'+Tails+Animal+Shelter/@41.8809358,-87.6311754,0z/data=!4m8!1m2!2m1!1sanimals+shelters+in+chicago!3m4!1s0x880e33a014c3b227:0x839085c97ecccd31!8m2!3d41.85665!4d-87.755619">1800 S Laramie Ave, Cicero, IL</a></td>
+</tr>
+</table>
+<script>
+function myFunction() {
+var input, filter, table, tr, td, i;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+table = document.getElementById("myTable");
+tr = table.getElementsByTagName("tr");
+for (i = 0; i < tr.length; i++) {
+  td = tr[i].getElementsByTagName("td")[0];
+  if (td) {
+    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+}
+}
+</script>
+</div>
+
+<!--Stories -->
+  <div id="Stories"class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+<div class="w3-twofifths">
+<img src="paw2.jpg" alt="paw" style="width:100px;height:80px;">
+<h3 class="w3-wide" ><font color="blue">Stories</h3><br><br></font>
+
+ <img src="Dolly2.jpg" alt="Dolly the Dog" style="width:128px;height:200px;"><p><br><b>"Dolly" </p></b>
+ <p><br>She is a female pitbull who was abused, she was hit on the head with
+   a baseball bat and even lit on fire. Due to the abuse she was left with scabs and burns on her skin and brain damage that left her blind.
+    However, she was saved after a volunteer decided to adopt her.</p><br><br><br><br>
+<img src="oogy.jpg" alt="oogy the Dog" style="width:128px;height:200px:"><p><br><b>"Oogy"</b></p>
+<p><br>He is a male pitbull who was used in a dogfighting operation. He was use
+  d as bait for a Pitbull and he had his left ear torn-off. He was left in a cage to die, until police officers found him and took him to an
+  animal hospital. He was saved and adopted by a loving family.</p><br><br>
+<img src="milky.jpg" alt="Milky the Cat" style="width:280px;height:300px:"><p><br><b>"Milky"</p></b>
+<p><br><br>He was dragged by a man for 20 minutes. He was found in a basket
+  crying in pain. His skin was bruised and had grazes to one side of his body.</p>
+<br><br>
+<p><a href="http://www.animals-abused.org/default.asp?contentID=75">Click here to view Dolly's and Oogy's story.</p></a>
+<p><a href="https://www.rspca.org.uk/whatwedo/endcruelty/prosecution/crueltystories/details/-/articleName/PAR_2016_cat_dragged_down_street_case_study">Click here
+  to view Milky's story.</p></a>
+
+<!--Our Team -->
+  <div id="OurTeam" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+<div class="w3-twofifths">
+  <img src="paw2.jpg" alt="paw" style="width:100px;height:100px;">
+<h3 class="w3-wide"><font color="blue">Our Team</h3><br><br></font>
+<img src="ourteam2.jpg" alt="Our Team Photo" style="width:500px;height:320px;">
+<p><b><br><br> Behind the scenes of FurEnds: Emily Camacho(left side), Betsy Aguilar(middle), Joselyn Morales(right side) </p></b></br></br>
+<p>We are participants at the Girls Who Code Summer Immersion Program in Chicago. We joined Girls Who Code to
+  challenge ourselves this summer and meet girls our age that are interested to learn Computer Science. This
+  website was made to inform people on ways to prevent animal abuse.</p>
+
+
+
+
+
+
+
 
 
 
@@ -57,4 +483,3 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 </body>
 </html>
-
